@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Ride</title>
+    <link rel="stylesheet" href="create.css">
+</head>
+
+<body>
+    <div class="nav">
+        <img src="./resource/logo.png" alt="">
+        <h1 class="para7">Fill this entries to create a ride</h1>
+    </div>
+    <div class="container">
+        <form action="/createride" class="form" method="POST">
+            <label for="username">
+                <input type="text" name="username" id="username" placeholder="Enter your name" required>
+            </label>
+            <label for="gender">
+                <input type="text" name="gender" id="gender" placeholder="Enter your Gender" required>
+            </label>
+            <label for="email">
+                <input type="email" name="email" id="email" placeholder="Enter your email" required>
+            </label>
+            <label for="arrivaltime">
+                <input type="time" name="arrivaltime" id="arrivaltime" placeholder="Enter your Arrival time" required>
+            </label>
+            <label for="arrivalplace">
+                <input type="text" name="arrivalplace" id="arrivalplace" placeholder="Enter your Arrival place"
+                    required>
+            </label>
+            <label for="endplace">
+                <input type="text" name="endplace" id="endplace" placeholder="Enter your End destination" required>
+            </label>
+
+            <label for="price">
+                <input type="number" name="price" id="price" placeholder="Enter amount you want to charge" required>
+            </label>
+            <label for="passenger">
+                <input type="number" name="passenger" id="passenger" placeholder="Enter number of passenger" required>
+            </label>
+            <label for="date">
+                <input type="date" name="date" id="date" placeholder="Enter some date">
+            </label>
+            <label for="no">
+                <input type="number" name="no" id="no" placeholder="Enter phone number for passenger (not imp)">
+            </label>
+            <button type="submit" class="butt">SUBMIT</button>
+        </form>
+    </div>
+    <script src="script.js"></script>
+    <script src="/data.js"></script>
+    <script src="create.js"></script>
+</body>
+
+</html>

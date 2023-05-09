@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ride and Go</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <!-- Navigation barr -->
+        <nav class="navi">
+            <ul class="ullinks">
+                <img src="./resource/logo.png" alt="">
+                <li class="lilinks"><a href="#home">Home</a></li>
+                <li class="lilinks"><a href="#about">About</a></li>
+                <li class="lilinks"><a href="#contact">Contact</a></li>
+                <li class="lilinks"><a href="/createride">Create Ride</a></li>
+                <li class="lilinks"><a href="/bookride">Book Ride</a></li>
+            </ul>
+        </nav>
+
+        <!-- Home tab -->
+        <a name="home">
+            <div class="homecontain">
+        </a>
+        <div class="para1">
+            <h1>Share your daily commute
+                with Carpool/Bikepool</h1>
+        </div>
+        <div class="content">
+            <aside class="para2">Join the sustainable movement today and make a positive impact on the environment
+                by carpooling with fellow commuters. Our carpooling website offers a convenient and cost-effective
+                solution to reduce traffic congestion, lower your carbon footprint, and save money on gas and tolls.
+                Sign up now and start sharing rides with like-minded individuals in your area!</aside>
+            <div class="imgae">
+                <img src="./resource/car.gif" alt="">
+            </div>
+        </div>
+    </div>
+
+    <!-- About tab -->
+
+    <a name="about">
+        <div class="aboutcotain" name="about">
+    </a>
+    <h1 class="para3">Why Carpool/Bikepool?</h1>
+    <h2 class="para4">Whether you have a vehicle or not, join Ride & go and save up to 80% of travel
+        costs.</h2>
+    <div class="detail">
+        <aside class="aboutimg">
+            <img src="./resource/about.png" alt="">
+        </aside>
+        <div class="boxes">
+            <div class="box1">
+                <img src="./resource/box1img.png" alt="">
+                <p class="para5">Get a car ride at the cost of bus
+                    fare (1/5th of taxi cost)</p>
+            </div>
+            <div class="box1">
+                <img src="./resource/box2img.png" alt="">
+                <p class="para5">Offer empty seats and get free
+                    fuel for an entire month</p>
+            </div>
+            <div class="box1">
+                <img src="./resource/box3img.png" alt="">
+                <p class="para5">Real time matches </p>
+            </div>
+            <div class="box1">
+                <img src="./resource/box4img.png" alt="">
+                <p class="para5">Safe with verified professionals</p>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <!-- for contact form -->
+
+   <a name="contact"> <div class="contactus"></a>
+        <h1 class="para6">For any query contact us</h1>
+        <form action="https://formspree.io/f/xbjewwqz" method="POST">
+            <p>Name</p>
+            <label for="username">
+                <input type="text" name="username" id="username" placeholder="Enter your name" required
+                    autocomplete="off">
+            </label>
+            <p>Email</p>
+            <label for="email">
+                <input type="email" name="email" id="email" placeholder="Enter your Email" required
+                    autocomplete="off"></label>
+            <p>Query</p>
+            <label for="textarea">
+            <textarea id="message" name="textarea" cols="35" rows="3" placeholder="Enter your query" required
+                autocomplete="off"></textarea></label>
+            <button class="btn">Send</button>
+        </form>
+    </div>
+
+
+    </div>
+    <script src="./app.js"></script>
+</body>
+
+</html>

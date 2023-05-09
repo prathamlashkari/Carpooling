@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Ride</title>
+    <link rel="stylesheet" href="/public/bookride.css">
+</head>
+
+<body>
+    <h1>Available Rides</h1>
+    <form class="nave" action="/bookride" method="GET">
+        <label for="endplace"></label>
+        <input type="text" id="endplace" name="endplace" placeholder="Enter your destination" required>
+        <button type="submit">Search</button>
+    </form>
+
+    <% if (rides.length===0) { %>
+        <p>No rides available</p>
+        <% } else { %>
+            <div class="cards">
+                <% rides.forEach(function(ride) { %>
+                    <% if (!endplace || ride.endplace.toLowerCase().includes(endplace.toLowerCase())) { %>
+                        <div class="card">
+                            <img src="/resource2/driver.png" alt="Image Description">
+                            <div class="details">
+                            <p class="card-text"><strong>Name:</strong>
+                                <%= ride.username %>
+                            </p>
+                            <p><strong>Gender : </strong>
+                                <%= ride.gender %>
+                            </p>
+                            <p><strong>Email: </strong>
+                                <%= ride.email %>
+                            </p>
+                            <p><strong>Arrival Time: </strong>
+                                <%= ride.arrivaltime %>
+                            </p>
+                            <p><strong>Arrival Place: </strong>
+                                <%= ride.arrivalplace %>
+                            </p>
+                            <p><strong>End Place: </strong>
+                                <%= ride.endplace %>
+                            </p>
+                            <p><strong>Price: </strong>
+                                <%= ride.price %>
+                            </p>
+                            <p><strong>Passenger: </strong>
+                                <%= ride.passenger %>
+                            </p>
+                            <p><strong>Date: </strong>
+                                <%= ride.date %>
+                            </p>
+                            <p><strong>Mobile no: </strong>
+                                <%= ride.no %>
+                            </p>
+                        </div>
+                        </div>
+                        <% } %>
+                            <% }) %>
+            </div>
+            <% } %>
+
+</body>
+
+</html>

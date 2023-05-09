@@ -1,0 +1,335 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@1,100&family=Libre+Baskerville&family=Orbitron&family=Oswald:wght@300;500&family=Playfair+Display:ital,wght@1,400;1,500&family=Roboto:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@1,100&family=Libre+Baskerville&family=Orbitron&family=Oswald:wght@300;500&family=Playfair+Display:ital,wght@0,400;1,400;1,500&family=Roboto:wght@300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* css for the navigation bar */
+
+.navi {
+    height: 60px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    ;
+}
+
+.ullinks {
+    display: flex;
+    gap: 4vw;
+    background-color: #0b2125;
+    height: 60px;
+    padding-left: 20px;
+    align-items: center;
+
+}
+
+.lilinks {
+    list-style: none;
+    font-size: 1.3em;
+}
+
+.lilinks a {
+    text-decoration: none;
+    list-style: none;
+    color: white;
+
+}
+
+/* links button hover */
+.lilinks a:hover {
+    color: blue;
+    font-weight: bold;
+    text-decoration: underline;
+    transition-duration: 0.2s;
+    cursor: pointer;
+}
+
+/* css for logoimage */
+ul img {
+    height: 46px;
+    width: 70px;
+}
+
+
+/* styling for the home tab */
+
+/* styling for the para 1 */
+.para1 {
+    /* background-color: red; */
+    display: flex;
+    justify-content: center;
+    height: 50px;
+    color: #13a438;
+    font-size: 1.3em;
+    margin-bottom: 15px;
+    /* font-family: 'Barlow Condensed', sans-serif; */
+    font-family: 'Libre Baskerville', serif;
+    margin-top: 2.8em;
+}
+
+/* applying the aside */
+
+.para2 {
+    width: 40%;
+    padding-left: 0.5rem;
+    margin-left: 0.5rem;
+    float: left;
+    box-shadow: inset 5px 0 5px -5px #29627e;
+    font-style: italic;
+    color: #29627e;
+    font-size: 2.1em;
+    margin-top: 2em;
+}
+
+.imgae img {
+    height: 63vh;
+    width: 50vw;
+    margin: 30px 0px 30px 60px;
+    border-radius: 40%;
+}
+
+.content {
+    background-color: #a6f4c8;
+    border-radius: 15%;
+}
+
+/* Styling for about page */
+
+.para3 {
+    /* background-color: red; */
+    height: 50px;
+    color: #13a438;
+    font-size: 2.3em;
+    margin-top: 15px;
+    padding-left: 0.2em;
+}
+
+.para4 {
+    font-size: 1.5em;
+    color: #3a622c;
+    padding-left: 0.5em;
+    font-family: 'Orbitron', sans-serif;
+}
+
+.detail {
+    margin-top: 2em;
+}
+
+.box1 {
+    border: 2px solid black;
+    height: 30vh;
+    width: 20vw;
+    border-radius: 50px;
+    margin-left: 2em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 3em;
+}
+
+.box1 img {
+    margin-top: 2em;
+    height: 7vh;
+    width: 5vw;
+    margin-bottom: 0.5em;
+}
+
+.aboutimg {
+    padding-left: 0.5rem;
+    margin-left: 0.5rem;
+    float: right;
+}
+
+.aboutimg img {
+    margin-top: 3em;
+    margin-left: 2em;
+}
+
+.para5 {
+    text-align: center;
+    font-family: 'Oswald', sans-serif;
+}
+
+
+.boxes {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 10px;
+}
+
+
+
+/* nowe making contact form */
+
+.contactus {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #94e1ff7d;
+    border-radius: 15%;
+    height: 70vh;
+}
+
+.para6 {
+    color: #20bb00;
+    font-size: 2.5em;
+    margin: 1em 0em;
+}
+
+form {
+    width: 30vw;
+    display: flex;
+    flex-direction: column;
+}
+
+form p {
+    font-size: 1.4em;
+    margin: 0.4em 0em;
+
+}
+
+form input {
+    width: 53%;
+    height: 3em;
+    padding: 0px 9px;
+}
+
+.btn {
+    width: 20%;
+    margin: 2em auto;
+    color: black;
+    background-color: #f9fd6e;
+    height: 3em;
+    border-radius: 5em;
+}
+
+/* media queries for fornt page mobile */
+
+@media only screen and (max-width: 950px) and (min-width: 320px) {
+    .ullinks {
+        display: flex;
+        gap: 8vw;
+        background-color: #0b2125;
+        height: 70px;
+        padding-left: 5px;
+        align-items: center;
+    }
+
+    .lilinks {
+        list-style: none;
+        font-size: 1em;
+    }
+
+    ul img {
+        display: none;
+    }
+
+    .para1 {
+        display: flex;
+        justify-content: center;
+        height: 20px;
+        font-size: 8px;
+        margin-bottom: 15px;
+        margin-top: 10.8em;
+    }
+
+    .para1 h1 {
+        padding-left: 39px;
+    }
+
+    .para2 {
+        display: none;
+    }
+
+    .content {
+        margin-top: 2em;
+        border-radius: 3%;
+    }
+
+    .imgae img {
+        height: 36vh;
+        width: 71vw;
+        margin: 19px 0px 23px 35px;
+        border-radius: 4%;
+    }
+
+    .para3 {
+        height: 40px;
+        font-size: 1.3em;
+        margin-top: 10px;
+        padding-left: 2.2em;
+    }
+
+    .para4 {
+        font-size: 0.9em;
+        text-align: center;
+    }
+
+    .aboutimg {
+        display: none;
+    }
+
+    .box1 {
+        border: 2px solid black;
+        height: 25vh;
+        width: 74vw;
+        border-radius: 25px;
+        margin-left: 2.3em;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 3em;
+    }
+
+    .boxes {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(1, 1fr);
+    }
+
+    .box1 img {
+        height: 8vh;
+        width: 34vw;
+        margin-bottom: 1.5em;
+    }
+
+    .para6 {
+        color: #20bb00;
+        font-size: 1.5em;
+        margin: 1em 0em;
+    }
+
+    form {
+        width: 82vw;
+    }
+
+    form p {
+        font-size: 1em;
+        margin: 1em 0em;
+    }
+
+    form input {
+        width: 80%;
+        height: 2em;
+        padding: 0px 9px;
+    }
+
+    form textarea {
+        padding: 0px 9px;
+    }
+
+    .contactus {
+        height: 50vh;
+    }
+}
